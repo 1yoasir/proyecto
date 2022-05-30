@@ -5719,7 +5719,7 @@ var Bienvenida = function Bienvenida() {
 
 var rutasUsuario = [{
   name: 'bienvenida',
-  path: '/usuario',
+  path: '/cliente',
   component: Bienvenida
 }];
 

@@ -3,7 +3,7 @@ const Bienvenida = () => import('./components/Bienvenida.vue');
 export const rutasUsuario = [
     {
         name: 'bienvenida',
-        path: '/usuario',
+        path: '/cliente',
         component: Bienvenida
     }
 ];

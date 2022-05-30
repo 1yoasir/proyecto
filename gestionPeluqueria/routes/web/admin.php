@@ -16,8 +16,10 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
+Route::prefix('admin')->group(function(){
+    Route::get('/', function () {
+        return view('usuario');
+    })->middleware('auth');
+});
 
-Route::get('{any}', function () {
-    return view('usuario');
-})->middleware('auth');
-
+?>

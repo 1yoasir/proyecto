@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
-Route::get('/usuario', function () {
-    return view('usuario');
-})->middleware('auth');
+Route::prefix('cliente')->group(function(){
+    Route::get('/', function () {
+        return view('usuario');
+    })->middleware('auth');
+});
+
+
+?>

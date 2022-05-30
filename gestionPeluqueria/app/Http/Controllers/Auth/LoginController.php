@@ -33,8 +33,12 @@ class LoginController extends Controller
     {
         if (Auth::user()->role == 'ADM') {
             return '/admin';
+        } elseif(Auth::user()->role == 'TRA'){
+            return '/trabajador';
+        } else{
+            return '/cliente';
         }
-        return '/usuario';
+        
     }
 
 
