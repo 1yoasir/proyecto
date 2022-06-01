@@ -5,13 +5,20 @@
  */
 
  import Appinvitado from './invitado/AppInvitado.vue';
+ import Appadmin from './admin/AppAdmin.vue';
+ import Appusuario from './usuarios/AppUsuario.vue';
 
  require('./bootstrap');
  
  window.Vue = require('vue').default;
  
  import VueRouter from 'vue-router';
+
  import {rutasInvitado} from './invitado/rutasInvitado';
+ import {rutasAdmin} from './admin/rutasAdmin';
+ import {rutasUsuario} from './usuarios/rutasUsuario';
+
+
  Vue.use(VueRouter);
  
  const routerInvitado = new VueRouter({
@@ -19,17 +26,17 @@
      routes: rutasInvitado,
  });
 
- import Appadmin from './admin/AppAdmin.vue';
+ 
 
- import {rutasAdmin} from './admin/rutasAdmin';
+ 
  const routerAdmin = new VueRouter({
     mode: 'history',
     routes: rutasAdmin,
 });
 
-import Appusuario from './usuarios/AppUsuario.vue';
 
- import {rutasUsuario} from './usuarios/rutasUsuario';
+
+
  const routerUsuario = new VueRouter({
     mode: 'history',
     routes: rutasUsuario,
@@ -71,7 +78,7 @@ const appInvitado = new Vue({
 });
 
 const appAdmin = new Vue({
-    el: '#appUsuario',
+    el: '#appAdmin',
     router: routerAdmin,
     components: {Appadmin},
 });

@@ -5357,6 +5357,25 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/admin/AppAdmin.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/admin/AppAdmin.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/invitado/AppInvitado.vue?vue&type=script&lang=js&":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/invitado/AppInvitado.vue?vue&type=script&lang=js& ***!
@@ -5509,10 +5528,34 @@ var Bienvenida = function Bienvenida() {
   return __webpack_require__.e(/*! import() */ "resources_js_admin_components_Bienvenida_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/Bienvenida.vue */ "./resources/js/admin/components/Bienvenida.vue"));
 };
 
+var Clientes = function Clientes() {
+  return __webpack_require__.e(/*! import() */ "resources_js_admin_components_s_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/s.vue */ "./resources/js/admin/components/s.vue"));
+};
+
+var Trabajadores = function Trabajadores() {
+  return __webpack_require__.e(/*! import() */ "resources_js_admin_components_Trabajadores_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/Trabajadores.vue */ "./resources/js/admin/components/Trabajadores.vue"));
+};
+
+var Citas = function Citas() {
+  return __webpack_require__.e(/*! import() */ "resources_js_admin_components_Citas_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/Citas.vue */ "./resources/js/admin/components/Citas.vue"));
+};
+
 var rutasAdmin = [{
   name: 'bienvenida',
   path: '/admin',
   component: Bienvenida
+}, {
+  name: 'clientes',
+  path: '/admin/clientes',
+  component: Clientes
+}, {
+  name: 'trabajadores',
+  path: '/admin/trabajadores',
+  component: Trabajadores
+}, {
+  name: 'citas',
+  path: '/admin/citas',
+  component: Citas
 }];
 
 /***/ }),
@@ -5526,12 +5569,12 @@ var rutasAdmin = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _invitado_AppInvitado_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./invitado/AppInvitado.vue */ "./resources/js/invitado/AppInvitado.vue");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _invitado_rutasInvitado__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./invitado/rutasInvitado */ "./resources/js/invitado/rutasInvitado.js");
-/* harmony import */ var _admin_AppAdmin_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./admin/AppAdmin.vue */ "./resources/js/admin/AppAdmin.vue");
+/* harmony import */ var _admin_AppAdmin_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./admin/AppAdmin.vue */ "./resources/js/admin/AppAdmin.vue");
+/* harmony import */ var _usuarios_AppUsuario_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./usuarios/AppUsuario.vue */ "./resources/js/usuarios/AppUsuario.vue");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _invitado_rutasInvitado__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./invitado/rutasInvitado */ "./resources/js/invitado/rutasInvitado.js");
 /* harmony import */ var _admin_rutasAdmin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./admin/rutasAdmin */ "./resources/js/admin/rutasAdmin.js");
-/* harmony import */ var _usuarios_AppUsuario_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./usuarios/AppUsuario.vue */ "./resources/js/usuarios/AppUsuario.vue");
-/* harmony import */ var _usuarios_rutasUsuario__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./usuarios/rutasUsuario */ "./resources/js/usuarios/rutasUsuario.js");
+/* harmony import */ var _usuarios_rutasUsuario__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./usuarios/rutasUsuario */ "./resources/js/usuarios/rutasUsuario.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -5539,27 +5582,27 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 
+
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js")["default"]);
 
 
-Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
-var routerInvitado = new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]({
+
+
+Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_6__["default"]);
+var routerInvitado = new vue_router__WEBPACK_IMPORTED_MODULE_6__["default"]({
   mode: 'history',
-  routes: _invitado_rutasInvitado__WEBPACK_IMPORTED_MODULE_1__.rutasInvitado
+  routes: _invitado_rutasInvitado__WEBPACK_IMPORTED_MODULE_3__.rutasInvitado
 });
-
-
-var routerAdmin = new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]({
+var routerAdmin = new vue_router__WEBPACK_IMPORTED_MODULE_6__["default"]({
   mode: 'history',
   routes: _admin_rutasAdmin__WEBPACK_IMPORTED_MODULE_4__.rutasAdmin
 });
-
-
-var routerUsuario = new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]({
+var routerUsuario = new vue_router__WEBPACK_IMPORTED_MODULE_6__["default"]({
   mode: 'history',
-  routes: _usuarios_rutasUsuario__WEBPACK_IMPORTED_MODULE_6__.rutasUsuario
+  routes: _usuarios_rutasUsuario__WEBPACK_IMPORTED_MODULE_5__.rutasUsuario
 });
 /**
  * The following block of code may be used to automatically register your
@@ -5595,17 +5638,17 @@ var appInvitado = new Vue({
   }
 });
 var appAdmin = new Vue({
-  el: '#appUsuario',
+  el: '#appAdmin',
   router: routerAdmin,
   components: {
-    Appadmin: _admin_AppAdmin_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
+    Appadmin: _admin_AppAdmin_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 var appUsuario = new Vue({
   el: '#appUsuario',
   router: routerUsuario,
   components: {
-    Appusuario: _usuarios_AppUsuario_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
+    Appusuario: _usuarios_AppUsuario_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   }
 });
 
@@ -5713,14 +5756,74 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "rutasUsuario": () => (/* binding */ rutasUsuario)
 /* harmony export */ });
-var Bienvenida = function Bienvenida() {
-  return __webpack_require__.e(/*! import() */ "resources_js_usuarios_components_Bienvenida_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/Bienvenida.vue */ "./resources/js/usuarios/components/Bienvenida.vue"));
+// COMPONENTES CLIENTE
+var BienvenidaCliente = function BienvenidaCliente() {
+  return __webpack_require__.e(/*! import() */ "resources_js_usuarios_components_cliente_Bienvenida_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/cliente/Bienvenida.vue */ "./resources/js/usuarios/components/cliente/Bienvenida.vue"));
 };
 
-var rutasUsuario = [{
-  name: 'bienvenida',
+var CitasCliente = function CitasCliente() {
+  return __webpack_require__.e(/*! import() */ "resources_js_usuarios_components_cliente_Citas_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/cliente/Citas.vue */ "./resources/js/usuarios/components/cliente/Citas.vue"));
+};
+
+var PedirCita = function PedirCita() {
+  return __webpack_require__.e(/*! import() */ "resources_js_usuarios_components_cliente_PedirCita_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/cliente/PedirCita.vue */ "./resources/js/usuarios/components/cliente/PedirCita.vue"));
+};
+
+var Servicios = function Servicios() {
+  return __webpack_require__.e(/*! import() */ "resources_js_usuarios_components_cliente_Servicios_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/cliente/Servicios.vue */ "./resources/js/usuarios/components/cliente/Servicios.vue"));
+}; //COMPONENTES TRABAJADOR
+
+
+var BienvenidaTrabajador = function BienvenidaTrabajador() {
+  return __webpack_require__.e(/*! import() */ "resources_js_usuarios_components_trabajador_Bienvenida_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/trabajador/Bienvenida.vue */ "./resources/js/usuarios/components/trabajador/Bienvenida.vue"));
+};
+
+var CitasTrabajador = function CitasTrabajador() {
+  return __webpack_require__.e(/*! import() */ "resources_js_usuarios_components_trabajador_Citas_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/trabajador/Citas.vue */ "./resources/js/usuarios/components/trabajador/Citas.vue"));
+};
+
+var Horario = function Horario() {
+  return __webpack_require__.e(/*! import() */ "resources_js_usuarios_components_trabajador_Horario_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/trabajador/Horario.vue */ "./resources/js/usuarios/components/trabajador/Horario.vue"));
+};
+
+var cambiarHorario = function cambiarHorario() {
+  return __webpack_require__.e(/*! import() */ "resources_js_usuarios_components_trabajador_CambiarHorario_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/trabajador/CambiarHorario.vue */ "./resources/js/usuarios/components/trabajador/CambiarHorario.vue"));
+};
+
+var rutasUsuario = [//RUTAS DEL CLIENTE
+{
+  name: 'bienvenida-cliente',
   path: '/cliente',
-  component: Bienvenida
+  component: BienvenidaCliente
+}, {
+  name: 'citas-cliente',
+  path: '/cliente/citas',
+  component: CitasCliente
+}, {
+  name: 'pedir-cita',
+  path: '/cliente/citas/crear',
+  component: PedirCita
+}, {
+  name: 'servicios',
+  path: '/cliente/servicios',
+  component: Servicios
+}, //RUTAS DEL TRABAJADOR
+{
+  name: 'bienvenida-trabajador',
+  path: '/trabajador',
+  component: BienvenidaTrabajador
+}, {
+  name: 'citas-trabajador',
+  path: '/trabajador/citas',
+  component: CitasTrabajador
+}, {
+  name: 'bienvenida-trabajador',
+  path: '/trabajador/horario',
+  component: Horario
+}, {
+  name: 'cambiar-horario',
+  path: '/trabajador/horario/editar',
+  component: cambiarHorario
 }];
 
 /***/ }),
@@ -28645,21 +28748,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _AppAdmin_vue_vue_type_template_id_8f6ee0e8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppAdmin.vue?vue&type=template&id=8f6ee0e8& */ "./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _AppAdmin_vue_vue_type_template_id_8f6ee0e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppAdmin.vue?vue&type=template&id=8f6ee0e8&scoped=true& */ "./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&scoped=true&");
+/* harmony import */ var _AppAdmin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppAdmin.vue?vue&type=script&lang=js& */ "./resources/js/admin/AppAdmin.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 ;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
-  _AppAdmin_vue_vue_type_template_id_8f6ee0e8___WEBPACK_IMPORTED_MODULE_0__.render,
-  _AppAdmin_vue_vue_type_template_id_8f6ee0e8___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AppAdmin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AppAdmin_vue_vue_type_template_id_8f6ee0e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _AppAdmin_vue_vue_type_template_id_8f6ee0e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
-  null,
+  "8f6ee0e8",
   null
   
 )
@@ -28831,6 +28936,22 @@ component.options.__file = "resources/js/usuarios/AppUsuario.vue"
 
 /***/ }),
 
+/***/ "./resources/js/admin/AppAdmin.vue?vue&type=script&lang=js&":
+/*!******************************************************************!*\
+  !*** ./resources/js/admin/AppAdmin.vue?vue&type=script&lang=js& ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAdmin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppAdmin.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/admin/AppAdmin.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAdmin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/invitado/AppInvitado.vue?vue&type=script&lang=js&":
 /*!************************************************************************!*\
   !*** ./resources/js/invitado/AppInvitado.vue?vue&type=script&lang=js& ***!
@@ -28921,19 +29042,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&":
-/*!************************************************************************!*\
-  !*** ./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8& ***!
-  \************************************************************************/
+/***/ "./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&scoped=true&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&scoped=true& ***!
+  \************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAdmin_vue_vue_type_template_id_8f6ee0e8___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAdmin_vue_vue_type_template_id_8f6ee0e8___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAdmin_vue_vue_type_template_id_8f6ee0e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAdmin_vue_vue_type_template_id_8f6ee0e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAdmin_vue_vue_type_template_id_8f6ee0e8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppAdmin.vue?vue&type=template&id=8f6ee0e8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppAdmin_vue_vue_type_template_id_8f6ee0e8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppAdmin.vue?vue&type=template&id=8f6ee0e8&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&scoped=true&");
 
 
 /***/ }),
@@ -29006,10 +29127,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&":
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8& ***!
-  \***************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/admin/AppAdmin.vue?vue&type=template&id=8f6ee0e8&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -29022,16 +29143,9 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("router-view")
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("¡Bienvenido Administrador!")])])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -44714,7 +44828,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_invitado_components_Inicio_vue":1,"resources_js_invitado_components_SobreNosotros_vue":1,"resources_js_invitado_components_Servicios_vue":1,"resources_js_invitado_components_Equipo_vue":1,"resources_js_invitado_components_Login_vue":1,"resources_js_admin_components_Bienvenida_vue":1,"resources_js_usuarios_components_Bienvenida_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_invitado_components_Inicio_vue":1,"resources_js_invitado_components_SobreNosotros_vue":1,"resources_js_invitado_components_Servicios_vue":1,"resources_js_invitado_components_Equipo_vue":1,"resources_js_invitado_components_Login_vue":1,"resources_js_admin_components_Bienvenida_vue":1,"resources_js_admin_components_s_vue":1,"resources_js_admin_components_Trabajadores_vue":1,"resources_js_admin_components_Citas_vue":1,"resources_js_usuarios_components_cliente_Bienvenida_vue":1,"resources_js_usuarios_components_cliente_Citas_vue":1,"resources_js_usuarios_components_cliente_PedirCita_vue":1,"resources_js_usuarios_components_cliente_Servicios_vue":1,"resources_js_usuarios_components_trabajador_Bienvenida_vue":1,"resources_js_usuarios_components_trabajador_Citas_vue":1,"resources_js_usuarios_components_trabajador_Horario_vue":1,"resources_js_usuarios_components_trabajador_CambiarHorario_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

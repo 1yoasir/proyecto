@@ -2,7 +2,7 @@
             <div class="container">
                 @auth
                 @if(auth()->user()->role == 'CLI')
-                <a class="navbar-brand" href="{{ url('/bienvenida') }}">
+                <a class="navbar-brand" href="{{ url('/cliente') }}">
                     {{ 'HairCut' }}
                 </a>
 
@@ -13,8 +13,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <a href="" class="nav nav-link">Mis Citas</a>
-                        <a href="" class="nav nav-link">Servicios</a>
+                        <a href="{{ url('cliente/citas') }}" class="nav nav-link">Mis Citas</a>
+                        <a href="{{ url('cliente/servicios') }}" class="nav nav-link">Servicios</a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
                 @elseif(auth()->user()->role == 'ADM')
-                <a class="navbar-brand" href="{{ url('/bienvenida') }}">
+                <a class="navbar-brand" href="{{ url('/admin') }}">
                     {{ 'HairCut' }}
                 </a>
 
@@ -52,9 +52,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <a href="" class="nav nav-link">Trabajadores</a>
-                        <a href="" class="nav nav-link">Clientes</a>
-                        <a href="" class="nav nav-link">Citas</a>
+                        <a href="{{ url('/admin/trabajadores') }}" class="nav nav-link">Trabajadores</a>
+                        <a href="{{ url('/admin/clientes') }}" class="nav nav-link">Clientes</a>
+                        <a href="{{ url('admin/citas') }}" class="nav nav-link">Citas</a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -81,7 +81,7 @@
                     </ul>
                 </div>
                 @else
-                <a class="navbar-brand" href="{{ url('/bienvenida') }}">
+                <a class="navbar-brand" href="{{ url('/trabajador') }}">
                     {{ 'HairCut' }}
                 </a>
 
@@ -92,8 +92,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <a href="" class="nav nav-link">Mis Citas</a>
-                        <a href="" class="nav nav-link">Horario</a>
+                        <a href="{{ url('/trabajador/citas') }}" class="nav nav-link">Mis Citas</a>
+                        <a href="{{ url('/trabajador/horario') }}" class="nav nav-link">Horario</a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
