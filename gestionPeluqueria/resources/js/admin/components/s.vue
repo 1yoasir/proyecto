@@ -1,5 +1,0 @@
-<template>
-    <div>
-        <h1 class="display-1">¡Clientes!</h1>
-    </div>
-</template>

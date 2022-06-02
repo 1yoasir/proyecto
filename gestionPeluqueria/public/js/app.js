@@ -5529,7 +5529,7 @@ var Bienvenida = function Bienvenida() {
 };
 
 var Clientes = function Clientes() {
-  return __webpack_require__.e(/*! import() */ "resources_js_admin_components_s_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/s.vue */ "./resources/js/admin/components/s.vue"));
+  return __webpack_require__.e(/*! import() */ "resources_js_admin_components_Clientes_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/Clientes.vue */ "./resources/js/admin/components/Clientes.vue"));
 };
 
 var Trabajadores = function Trabajadores() {
@@ -44828,7 +44828,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_invitado_components_Inicio_vue":1,"resources_js_invitado_components_SobreNosotros_vue":1,"resources_js_invitado_components_Servicios_vue":1,"resources_js_invitado_components_Equipo_vue":1,"resources_js_invitado_components_Login_vue":1,"resources_js_admin_components_Bienvenida_vue":1,"resources_js_admin_components_s_vue":1,"resources_js_admin_components_Trabajadores_vue":1,"resources_js_admin_components_Citas_vue":1,"resources_js_usuarios_components_cliente_Bienvenida_vue":1,"resources_js_usuarios_components_cliente_Citas_vue":1,"resources_js_usuarios_components_cliente_PedirCita_vue":1,"resources_js_usuarios_components_cliente_Servicios_vue":1,"resources_js_usuarios_components_trabajador_Bienvenida_vue":1,"resources_js_usuarios_components_trabajador_Citas_vue":1,"resources_js_usuarios_components_trabajador_Horario_vue":1,"resources_js_usuarios_components_trabajador_CambiarHorario_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_invitado_components_Inicio_vue":1,"resources_js_invitado_components_SobreNosotros_vue":1,"resources_js_invitado_components_Servicios_vue":1,"resources_js_invitado_components_Equipo_vue":1,"resources_js_invitado_components_Login_vue":1,"resources_js_admin_components_Bienvenida_vue":1,"resources_js_admin_components_Clientes_vue":1,"resources_js_admin_components_Trabajadores_vue":1,"resources_js_admin_components_Citas_vue":1,"resources_js_usuarios_components_cliente_Bienvenida_vue":1,"resources_js_usuarios_components_cliente_Citas_vue":1,"resources_js_usuarios_components_cliente_PedirCita_vue":1,"resources_js_usuarios_components_cliente_Servicios_vue":1,"resources_js_usuarios_components_trabajador_Bienvenida_vue":1,"resources_js_usuarios_components_trabajador_Citas_vue":1,"resources_js_usuarios_components_trabajador_Horario_vue":1,"resources_js_usuarios_components_trabajador_CambiarHorario_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

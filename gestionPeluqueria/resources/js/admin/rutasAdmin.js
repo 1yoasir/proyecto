@@ -1,5 +1,5 @@
 const Bienvenida = () => import('./components/Bienvenida.vue');
-const Clientes = () => import('./components/s.vue');
+const Clientes = () => import('./components/Clientes.vue');
 const Trabajadores = () => import('./components/Trabajadores.vue');
 const Citas = () => import('./components/Citas.vue');
 

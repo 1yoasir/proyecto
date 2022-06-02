@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Listado Trabajadores</div>
+                <div class="card-header">Mis Clientes</div>
 
                 <div class="card-body">
                     <table class="table">
@@ -11,20 +11,14 @@
                             <tr>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Teléfono</th>
-                                <th scope="col">Horario</th>
-                                <th scope="col"></th>
+                                <th scope="col">Citas</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(trabajador, index) in trabajadores" :key="index">
-                                <th scope="row">Paco</th>
-                                <td>66778844</td>
-                                <td>Horario</td>
-                                <td>
-                                    <routerLink><i class="bi bi-trash"></i></routerLink>
-                                    <routerLink></routerLink>
-                                    <routerLink></routerLink>
-                                </td>
+                            <th scope="row">Paco</th>
+                            <td>66778844</td>
+                            <td>Horario</td>
                             </tr>
                         </tbody>
                     </table>
